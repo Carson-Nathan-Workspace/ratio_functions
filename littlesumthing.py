@@ -1,18 +1,3 @@
-marketsept = open("spseptember2019.txt", "r")
-
-lines = marketsept.readlines()
-
-adj_close = []
-
-for line in lines:
-        print(line)
-        #data = line.split(" ")
-        # for point in data:
-                # point.strip()
-                # print(point)
-
-marketsept.close()
-
 
 def jensenalpha(ret_i, ret_rf, b, ret_m):
         jalpha = ret_i - (b * (ret_m - ret_rf) + ret_rf)
